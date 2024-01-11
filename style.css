@@ -32,8 +32,8 @@ body{
 }
 
 .container{
-    width: 230px;
-    background: #f7f4f4;
+    width: 16%;
+    background: #eeeef3;
     padding: 20px;
     height: 550px;
     border-radius: 25px;
@@ -43,26 +43,41 @@ body{
 
 }
 .container .header{
-    font-size: 18px;
+    margin-top: 45px;
+    font-size: 24px;
     text-align: center;
     font-weight: bold;
-    margin-bottom: 14px;
-    color: rgb(50, 65, 94);
+    color: #a3abc8;
+    margin-bottom: 40%;
 }
 .main{
-    width: 1000px;
-    background: #f4f4f7;
+    width: 63%;
+    background: #eeeef3;
     padding: 40px;
     height: 550px;
     border-radius: 25px;
     box-shadow: 0 4px 30px rgba(0,0,0,0.1);
     position: absolute;
-    right: 150px
+    right: 150px;
+    
 }
-button{
+.container button{
     border-width: 0;
+    border-radius: 10px;
     width: 100%;
-    height: 50px;
+    height: 10%;
     text-align: center;
-    background: #d2d6e2;
+    font-weight:600;
+    background: #eeeef3;
+    color: #5f698b;
+}
+.balance{
+    top: 15%;
+    left: 29.5%;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    background: #e8e8f1;
+    border-radius: 15px;
 }
