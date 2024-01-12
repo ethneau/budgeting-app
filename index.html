@@ -9,18 +9,25 @@
 </head>
 <body>
     <div class="main">
+        <div class="balance">
+            <p class="header">balance</p>
+            <div class="text" id="bal">0</div>
+        </div>
+        <div class="transactions">
+            <p class="header">transactions</p>
+        </div>
+        <div class="income"></div>
+        <div class="spending"></div>
     </div>
     <div class="container">
         <p class="header">time to track.</p>
         <button onmouseenter="changeColor(this,'#dcdfe9')" onmouseleave="changeColor(this, '#eeeef3')">home</button>
-        <button onmouseenter="changeColor(this,'#dcdfe9')" onmouseleave="changeColor(this, '#eeeef3')">goals</button>
-        <button onmouseenter="changeColor(this,'#dcdfe9')" onmouseleave="changeColor(this, '#eeeef3')">scan</button>
         <button onmouseenter="changeColor(this,'#dcdfe9')" onmouseleave="changeColor(this, '#eeeef3')">data</button>
+        <button onmouseenter="changeColor(this,'#dcdfe9')" onmouseleave="changeColor(this, '#eeeef3')">scan</button>
+        <button onmouseenter="changeColor(this,'#dcdfe9')" onmouseleave="changeColor(this, '#eeeef3')">goals</button>
         <button onmouseenter="changeColor(this,'#dcdfe9')" onmouseleave="changeColor(this, '#eeeef3')">settings</button>
     </div>
-    <div class="balance">
-
-    </div>
+    
     <script src="app.js"></script>
 </body>
 </html>

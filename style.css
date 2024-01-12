@@ -50,17 +50,6 @@ body{
     color: #a3abc8;
     margin-bottom: 40%;
 }
-.main{
-    width: 63%;
-    background: #eeeef3;
-    padding: 40px;
-    height: 550px;
-    border-radius: 25px;
-    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
-    position: absolute;
-    right: 150px;
-    
-}
 .container button{
     border-width: 0;
     border-radius: 10px;
@@ -71,13 +60,61 @@ body{
     background: #eeeef3;
     color: #5f698b;
 }
-.balance{
-    top: 15%;
-    left: 29.5%;
-    padding: 20px;
-    width: 300px;
-    height: 200px;
+.main{
+    width: 63%;
+    background: #eeeef3;
+    padding: 45px;
+    height: 550px;
+    border-radius: 25px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    position: absolute;
+    right: 150px;
+    
+}
+.main .balance{
+    padding: 25px;
+    width: 430px;
+    height: 225px;
     position: absolute;
     background: #e8e8f1;
     border-radius: 15px;
+}
+.main .transactions{
+    padding: 20px;
+    width: 416px;
+    height: 83%;
+    right: 5%;
+    position: absolute;
+    background: #e8e8f1;
+    border-radius: 15px;
+}
+.main .income{
+    padding: 25px;
+    width: 200px;
+    height: 200px;
+    bottom: 8.7%;
+    position: absolute;
+    background: #e8e8f1;
+    border-radius: 15px;
+}
+.main .spending{
+    padding: 25px;
+    width: 200px;
+    height: 200px;
+    bottom: 8.7%;
+    left: 28%;
+    position: absolute;
+    background: #e8e8f1;
+    border-radius: 15px;
+}
+.main .header{
+    color:#a3abc8;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.main .text{
+    color: #5f698b;
+    font-weight: 600;
+    font-size: 45px;
+    text-align: justify;
 }
