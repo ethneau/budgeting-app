@@ -1,4 +1,4 @@
-let bal = 1.0;
+let bal = 12.0;
 function changeColor(element, color) {
   element.style.backgroundColor = color;
 }
