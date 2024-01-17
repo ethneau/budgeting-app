@@ -13,7 +13,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(-270deg,#e5bfbb, #5e6aa0);
+    background: linear-gradient(-270deg,#E8CBC0, #636FA4);
     
 
 }
@@ -116,28 +116,73 @@ body{
     color: #5f698b;
     font-weight: 600;
     font-size: 45px;
-    text-align: justify;
 }
 .databalance{
-    display: flex;
+    display:flex;
     padding: 25px;
     width: 450px;
-    height: 100px;
-    position: absolute;
-    background: #e8e8f1;
+    height: 125px;
+    position: static;
+    background: #e7e7f0;
     border-radius: 15px;
+    justify-content: right;
 }
-.databalance button{
+.main button{
     border-width: 0;
-    border-radius: 5px;
+    border-radius: 8px;
+    width: 60px;
+    height: 25px;
+    margin-left: 375px;
+    top: 130px;
     text-align: center;
     font-weight:600;
-    background: #eeeef3;
-    color: #5f698b;
+    background: #5f698b;
+    color: #e8e8f1;
     position: absolute;
     justify-content: right;
 }
+.databalance .header{
+    padding-right: 50px;
+}
 .databalance .text{
-    height:0;
+    right: 0px;
+    justify-content: right;
+    position: relative;
+}
+input{
+    border-width:0px;
+    resize: none;
+    overflow: hidden;
     text-align: right;
+    background: #e8e8f100;
+    color: #5f698b;
+    height: 40px;
+    width: 250px;
+}
+::placeholder {
+    color: #5f698b;
+    opacity: 1; /* Firefox */
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12 -18 */
+    color: #5f698b;
+  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.sign{
+    text-align: right;
+    color: #5f698b;
+    font-size: 45px;
+    font-weight: 600;
+    position: absolute;
+    left: 180px;
+    top: 55px;
 }

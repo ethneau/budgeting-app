@@ -11,16 +11,20 @@
 </head>
 <body>
     <div class="main">
-        <div class="databalance">
-            <p class="header">balance</p>
+        <div>
             <button
-                onclick="location.href='index.html';" 
-                onmouseenter="changeColor(this,'#dcdfe9')" 
-                onmouseleave="changeColor(this, '#eeeef3')">
-                edit
+                onclick="saveBalance()"
+                onmouseenter="changeColor(this,'#a3abc8')" 
+                onmouseleave="changeColor(this, '#5f698b')">
+                save
             </button>
-            <div class="text" id="bal">0</div>
         </div>
+        <div class="databalance">
+            <p class="header">edit balance</p>
+            <p class="sign">$</p>
+            <input class="text" id="newbal" value=0.00></input>
+        </div>
+        <div class="text" id="update">$0.00</div>
 
     </div>
     <div class="container">
@@ -51,8 +55,9 @@
             onmouseleave="changeColor(this, '#eeeef3')">settings
         </button>
     </div>
-    
     <script src="app.js"></script>
+    <script>
+        window.onload = setNewBalance();</script>
     <py-script type="py" src="./ocr.py"></py-script>
 </body>
 </html>
