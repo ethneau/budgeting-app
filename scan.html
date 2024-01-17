@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
     <title>Budget App</title>
 </head>
 <body>
@@ -13,13 +15,34 @@
     </div>
     <div class="container">
         <p class="header">time to track.</p>
-        <button onclick="location.href='index.html';" onmouseenter="changeColor(this,'#dcdfe9')" onmouseleave="changeColor(this, '#eeeef3')">home</a></button>
-        <button onclick="location.href='index.html';" onmouseenter="changeColor(this,'#dcdfe9')" onmouseleave="changeColor(this, '#eeeef3')">data<a title="Home" href="index.html"></a></button>
-        <button onclick="location.href='scan.html';" onmouseenter="changeColor(this,'#dcdfe9')" onmouseleave="changeColor(this, '#eeeef3')">scan<a title="Scan" href="scan.html"></a></button>
-        <button onclick="location.href='index.html';" onmouseenter="changeColor(this,'#dcdfe9')" onmouseleave="changeColor(this, '#eeeef3')">goals</button>
-        <button onclick="location.href='settings.html';" onmouseenter="changeColor(this,'#dcdfe9')" onmouseleave="changeColor(this, '#eeeef3')">settings</button>
+        <button 
+            onclick="location.href='index.html';" 
+            onmouseenter="changeColor(this,'#dcdfe9')" 
+            onmouseleave="changeColor(this, '#eeeef3')">home
+        </button>
+        <button 
+            onclick="location.href='data.html';" 
+            onmouseenter="changeColor(this,'#dcdfe9')" 
+            onmouseleave="changeColor(this, '#eeeef3')">data
+        </button>
+        <button 
+            onclick="location.href='scan.html';" 
+            onmouseenter="changeColor(this,'#dcdfe9')" 
+            onmouseleave="changeColor(this, '#eeeef3')">scan
+        </button>
+        <button 
+            onclick="location.href='index.html';" 
+            onmouseenter="changeColor(this,'#dcdfe9')" 
+            onmouseleave="changeColor(this, '#eeeef3')">goals
+        </button>
+        <button 
+            onclick="location.href='settings.html';" 
+            onmouseenter="changeColor(this,'#dcdfe9')" 
+            onmouseleave="changeColor(this, '#eeeef3')">settings
+        </button>
     </div>
     
     <script src="app.js"></script>
+    <py-script type="py" src="./ocr.py"></py-script>
 </body>
 </html>

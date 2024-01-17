@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
     <title>Budget App</title>
 </head>
 <body>
     <div class="main">
-        <div class="balance">
+        <div class="databalance">
             <p class="header">balance</p>
+            <button
+                onclick="location.href='index.html';" 
+                onmouseenter="changeColor(this,'#dcdfe9')" 
+                onmouseleave="changeColor(this, '#eeeef3')">
+                edit
+            </button>
             <div class="text" id="bal">0</div>
         </div>
-        <div class="transactions">
-            <p class="header">transactions</p>
-        </div>
-        <div class="income"></div>
-        <div class="spending"></div>
+
     </div>
     <div class="container">
         <p class="header">time to track.</p>
@@ -49,6 +53,6 @@
     </div>
     
     <script src="app.js"></script>
-    
+    <py-script type="py" src="./ocr.py"></py-script>
 </body>
 </html>
