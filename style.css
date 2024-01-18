@@ -73,15 +73,15 @@ body{
 }
 .main .balance{
     padding: 25px;
-    width: 430px;
-    height: 225px;
+    width: 435px;
+    height: 240px;
     position: absolute;
     background: #e8e8f1;
     border-radius: 15px;
 }
 .main .transactions{
     padding: 20px;
-    width: 416px;
+    width: 425px;
     height: 83%;
     right: 5%;
     position: absolute;
@@ -90,7 +90,7 @@ body{
 }
 .main .income{
     padding: 25px;
-    width: 200px;
+    width: 210px;
     height: 200px;
     bottom: 8.7%;
     position: absolute;
@@ -99,7 +99,7 @@ body{
 }
 .main .spending{
     padding: 25px;
-    width: 200px;
+    width: 210px;
     height: 200px;
     bottom: 8.7%;
     left: 28%;
@@ -149,7 +149,7 @@ body{
     justify-content: right;
     position: relative;
 }
-input{
+.databalance input{
     border-width:0px;
     resize: none;
     overflow: hidden;
@@ -185,4 +185,105 @@ input[type=number] {
     position: absolute;
     left: 180px;
     top: 55px;
+}
+.addtransaction{
+    display:flex;
+    padding: 25px;
+    margin-top: 10px;
+    width: 450px;
+    height: 325px;
+    background: #e7e7f0;
+    border-radius: 15px;
+}
+.addtransaction .header{
+    position: absolute;
+    left: 70px;
+}
+.history{
+    display:flex;
+    padding: 25px;
+    margin-top: 10px;
+    top: 35px;
+    right: 50px;
+    width: 410px;
+    height: 460px;
+    position: absolute;
+    background: #e7e7f0;
+    border-radius: 15px;
+    justify-content: right; 
+}
+.history .header {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+.addtitle{
+    top: 270px;
+    font-size: 20px;
+    position: absolute;
+    border-radius: 10px;
+    padding: 5px;
+    left: 150px;
+    background-color:#c8cde3;
+}
+.addprice{
+    top: 340px;
+    font-size: 20px;
+    position: absolute;
+    border-radius: 10px;
+    padding: 5px;
+    left: 150px;
+    background-color:#c8cde3;
+}
+.addtransaction input{
+    border-width:0px;
+    resize: none;
+    overflow: hidden;
+    text-align: left;
+    background: #e1e1ec;
+    color:#a3abc8;
+    height: 40px;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.add{
+    margin-top: 230px;
+    font-size: 20px;
+
+}
+.addtransaction ::placeholder {
+    color: #5f698b34;
+    opacity: 1; /* Firefox */
+  }
+  
+.addtransaction  ::-ms-input-placeholder { /* Edge 12 -18 */
+    color: #5f698b34;
+  }
+.h1{
+    position: absolute;
+    left: 60px;
+    top: 258px;
+    padding: 20px;
+    color:#5f698b;
+    font-weight: 500;
+}
+.h2{
+    position: absolute;
+    bottom: 158px;
+    left: 60px;
+    padding: 20px;
+    color:#5f698b;
+    font-weight: 500;
+}
+.radiotitle{
+    margin-top: 240px;
+    color:#5f698b;
+    font-weight: 500;
+    bottom: 50px;  
+}
+.main .save{
+    position: absolute;
+    top: 460px;
+    
 }

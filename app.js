@@ -12,12 +12,11 @@ function updateElement() {
 function saveBalance() {
   let newBal = document.getElementById("newbal").value;
   let newValue = parseFloat(newBal);
-  if (isNaN(newValue)) document.getElementById("update").innerHTML = "$" + bal;
-  else {
-    document.getElementById("update").innerHTML = "$" + newValue.toFixed(2);
+  if (!isNaN(newValue)) {
     localStorage.setItem("bal", newValue);
     bal = localStorage.getItem("bal");
   }
+  alert("saved!");
 }
 function setNewBalance() {
   if (isNaN(bal)) document.getElementById("newbal").value = 0.0;
