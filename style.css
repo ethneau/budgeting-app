@@ -250,6 +250,7 @@ input[type=number] {
 .add{
     margin-top: 230px;
     font-size: 20px;
+    position: absolute;
 
 }
 .addtransaction ::placeholder {
@@ -275,12 +276,6 @@ input[type=number] {
     padding: 20px;
     color:#5f698b;
     font-weight: 500;
-}
-.radiotitle{
-    margin-top: 240px;
-    color:#5f698b;
-    font-weight: 500;
-    bottom: 50px;  
 }
 .main .save{
     position: absolute;

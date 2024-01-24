@@ -28,12 +28,12 @@
             <p class="header">add transaction</p>
             <p class="h1">title </p> 
             <input class="addtitle" type="text" placeholder="groceries">
-            <p class="radiotitle">income </p>
-            <input class="add" type="radio"> 
-            <p class="radiotitle">spendings </p>
-            <input class="add" type="radio">
             <p class="h2">price</p>
             <input class="addprice" type="float" placeholder="0.00">
+            <form>
+                <input class="add" type="radio">income<br> 
+                <input class="add" type="radio">spendings<br>
+            </form>
             <button
                 class="save"
                 onclick="saveBalance()"
@@ -78,6 +78,5 @@
     <script src="app.js"></script>
     <script>
         window.onload = setNewBalance();</script>
-    <py-script type="py" src="./ocr.py"></py-script>
 </body>
 </html>
