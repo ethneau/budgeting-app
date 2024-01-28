@@ -247,12 +247,32 @@ input[type=number] {
     font-size: 18px;
     font-weight: 500;
 }
-.add{
-    margin-top: 230px;
-    font-size: 20px;
-    position: absolute;
 
+form{
+    display:flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    top: 400px;
+    font-size: 15px;
+    color: #5b6896;
+    font-weight: 500;
 }
+label{
+    margin-left: 180px;
+    margin-top: 3px;
+}
+ #income{
+    position: absolute;
+    top: 0px;
+    height: 1.5em;
+ }
+ #spendings{
+    position: absolute;
+    top: 50px;
+    height: 1.5em;
+
+ }
 .addtransaction ::placeholder {
     color: #5f698b34;
     opacity: 1; /* Firefox */
@@ -280,5 +300,5 @@ input[type=number] {
 .main .save{
     position: absolute;
     top: 460px;
-    
+    left: 45px;
 }
