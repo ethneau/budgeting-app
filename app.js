@@ -24,3 +24,29 @@ function setNewBalance() {
     document.getElementById("newbal").value = bal.toFixed(2);
   }
 }
+function getFile() {
+  file = document.getElementById("file").value;
+  alert(file);
+}
+function displayImage() {
+  const input = document.getElementById("file");
+  const container = document.getElementById("imageContainer");
+
+  // Check if a file is selected
+  if (input.files && input.files[0]) {
+    const reader = new FileReader();
+
+    reader.onload = function (e) {
+      // Create an image element and set its source to the selected file
+      const img = document.createElement("img");
+      img.src = e.target.result;
+
+      // Append the image to the container
+      container.innerHTML = "";
+      container.appendChild(img);
+    };
+
+    // Read the selected file as a data URL
+    reader.readAsDataURL(input.files[0]);
+  }
+}

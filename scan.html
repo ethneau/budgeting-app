@@ -11,8 +11,11 @@
 </head>
 <body>
     <py-script type="py" src="./ocr.py"></py-script>
-    <div class="main">
-        
+    <div class="main" id="scan">
+        <p>Input file</p>
+        <input id="file" type="file" accept="image/*" onchange="displayImage()">
+    </div>
+    <div id="imageContainer">
     </div>
     <div class="container">
         <p class="header">time to track.</p>
@@ -44,6 +47,6 @@
     </div>
     
     <script src="app.js"></script>
-    <py-script type="py" src="./ocr.py"></py-script>
+
 </body>
 </html>

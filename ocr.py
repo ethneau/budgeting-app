@@ -1,5 +1,8 @@
 from pyscript import display
-from datetime import datetime
+import js
 
-now = datetime.now()
-display(now.strftime("%m/%d/%Y, %H:%M:%S"))
+
+def displayFile():
+    # file = js.document.getElementById("file")
+    display("hi")
+    # display(file)
