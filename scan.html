@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">    
-    <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
-    <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
     <title>Budget App</title>
 </head>
 <body>
-    <py-script type="py" src="./ocr.py"></py-script>
+    <script src='https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js'></script>
     <div class="main" id="scan">
-        <p>Input file</p>
-        <input id="file" type="file" accept="image/*" onchange="displayImage()">
-    </div>
-    <div id="imageContainer">
+        <div class="fileinput">
+            <p class="header">receipt scanner</p>
+            <input id="file" type="file" accept="image/*">
+            <button 
+                onmouseenter="changeColor(this,'#a3abc8')" 
+                onmouseleave="changeColor(this, '#5f698b')" 
+                onclick="performOCR()">save</button>
+            <p class="expense">expense</p>
+            <label class="expense" id="output">$__.__</label>
+        </div>
     </div>
     <div class="container">
         <p class="header">time to track.</p>

@@ -302,6 +302,35 @@ label{
     top: 460px;
     left: 45px;
 }
-#scan{
-    background-color: #5b689600;
+.fileinput input{
+    margin-top: 15px;
+    font-weight: 500;
+    color:#5b6896;
+}
+input::file-selector-button {
+    font-weight: bold;
+    color:#e8e8f1;
+    padding: 5px;
+    border:#636FA4;
+    border-radius: 10px;
+    background-color: #747ea0;
+}
+.fileinput{
+    padding: 25px;
+    width: 435px;
+    height: 145px;
+    position: absolute;
+    background: #e8e8f1;
+    border-radius: 15px;
+    font-size: 18px;
+}
+.fileinput button{
+    position: static;
+    margin-left: 330px;
+}
+.expense{
+    position: absolute;
+    top: 170px;
+    font-weight: 500;
+    color:#5b6896;
 }

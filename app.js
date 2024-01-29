@@ -24,29 +24,46 @@ function setNewBalance() {
     document.getElementById("newbal").value = bal.toFixed(2);
   }
 }
-function getFile() {
-  file = document.getElementById("file").value;
-  alert(file);
-}
-function displayImage() {
-  const input = document.getElementById("file");
-  const container = document.getElementById("imageContainer");
+async function performOCR() {
+  const fileInput = document.getElementById("file");
+  const outputDiv = document.getElementById("output");
+
+  // Get the selected file
+  const file = fileInput.files[0];
 
   // Check if a file is selected
-  if (input.files && input.files[0]) {
+  if (file) {
+    // Read the file using FileReader
     const reader = new FileReader();
+    reader.onload = async function (e) {
+      const image = new Image();
+      image.src = e.target.result;
 
-    reader.onload = function (e) {
-      // Create an image element and set its source to the selected file
-      const img = document.createElement("img");
-      img.src = e.target.result;
+      // Perform OCR using Tesseract.js
+      const {
+        data: { text },
+      } = await Tesseract.recognize(image);
 
-      // Append the image to the container
-      container.innerHTML = "";
-      container.appendChild(img);
+      // Display the OCR result
+      newtext = extract(text);
+      outputDiv.innerText = "$" + newtext;
     };
 
-    // Read the selected file as a data URL
-    reader.readAsDataURL(input.files[0]);
+    reader.readAsDataURL(file);
   }
+}
+function extract(text) {
+  textArray = text.split(/\s+/);
+  for (let i = textArray.length - 1; i > 0; i--) {
+    console.log(textArray[i]);
+    if (!isNaN(Number(textArray[i]))) {
+      if (twoDecimals(Number(textArray[i])) && textArray[i].length > 3) {
+        return Number(textArray[i]);
+      }
+    }
+  }
+}
+function twoDecimals(number) {
+  const regex = /^\d+\.\d{2}$/;
+  return regex.test(number.toString());
 }
