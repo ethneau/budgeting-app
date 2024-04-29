@@ -55,7 +55,7 @@ async function performOCR() {
 function extract(text) {
   textArray = text.split(/\s+/);
   for (let i = textArray.length - 1; i > 0; i--) {
-    console.log(textArray[i]);
+    console.log(text);
     if (!isNaN(Number(textArray[i]))) {
       if (twoDecimals(Number(textArray[i])) && textArray[i].length > 3) {
         return Number(textArray[i]);
